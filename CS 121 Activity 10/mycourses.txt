@@ -1,0 +1,4 @@
+Course Credits Score
+CS 121 4 100
+CS 110 3 90
+poopy 1000 69
