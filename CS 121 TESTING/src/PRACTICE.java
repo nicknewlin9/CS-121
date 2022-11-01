@@ -15,6 +15,10 @@ public class PRACTICE
 {
     public static void main(String[] args)
     {
-        System.out.println("yahz");
+        for(int i=0;i<7;i++)
+        {
+            System.out.print(i+ " ");
+            i=i+2;
+        }
     }
 }
