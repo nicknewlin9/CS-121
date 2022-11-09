@@ -1,3 +1,16 @@
+/*
+ *******************************************************************
+ * Activity 2
+ * Name: Nicholas Newlin
+ * Date of Submission (09/02/2022)
+ * CS 121 Data Structures and Objects
+ ******************** Program Documentation ************************
+ *
+ *
+ *
+ *
+ *******************************************************************
+ */
 import javax.swing.*;
 public class TestScores
 {

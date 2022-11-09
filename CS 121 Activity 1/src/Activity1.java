@@ -1,20 +1,16 @@
-// *******************************************************************
-// Assignment #1
-// Name: Nicholas Newlin
-// Date of Submission (09/01/22)
-// CS 121 Data Structures and Objects
-// ******************** Program Documentation ************************
-//
-//
-//
-//
-// *******************************************************************
-//
-//
-//
-//
-// *******************************************************************
-
+/*
+ *******************************************************************
+ * Activity 1
+ * Name: Nicholas Newlin
+ * Date of Submission (09/01/2022)
+ * CS 121 Data Structures and Objects
+ ******************** Program Documentation ************************
+ *
+ *
+ *
+ *
+ *******************************************************************
+ */
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Activity1

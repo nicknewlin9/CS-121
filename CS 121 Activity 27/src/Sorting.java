@@ -17,21 +17,23 @@ public class Sorting
         array[4] = scanner.nextInt();
         return array;
     }
-    //bubble sort in ascending order
+
+    //selection sort
     public int[] sortArray(int[] array)
     {
-        int temp;
-        for (int i = 0; i < array.length - 1; i++)
+        for (int i = 0; i < array.length ; i++)
         {
-            for (int index = 0; index < array.length - i - 1; index++)
+            int min = i;
+            for (int j = i + 1; j < array.length; j++)
             {
-                if (array[index] > array[index + 1])
+                if (array[j] < array[min])
                 {
-                    temp = array[index];
-                    array[index] = array[index + 1];
-                    array[index + 1] = temp;
+                    min = j;
                 }
             }
+            int temp = array[i];
+            array[i] = array[min];
+            array[min] = temp;
         }
         return array;
     }
