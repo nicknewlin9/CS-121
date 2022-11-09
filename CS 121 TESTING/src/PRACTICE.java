@@ -15,10 +15,15 @@ public class PRACTICE
 {
     public static void main(String[] args)
     {
-        for(int i=0;i<7;i++)
+        final int ROWS = 3;
+        final int COLS = 4;
+        double [ ] [ ] scores = new double [ROWS] [COLS];
+        for (int row = 0; row < ROWS; row++)
         {
-            System.out.print(i+ " ");
-            i=i+2;
+            for (int col = 0; col < COLS; col++)
+            {
+                System.out.printf("Element in row %d column %d is %f\n", row+1, col+1, scores[row][col]);
+            }
         }
     }
 }
