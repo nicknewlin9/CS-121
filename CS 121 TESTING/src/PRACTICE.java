@@ -25,5 +25,6 @@ public class PRACTICE
                 System.out.printf("Element in row %d column %d is %f\n", row+1, col+1, scores[row][col]);
             }
         }
+        System.out.print("Testing");
     }
 }
