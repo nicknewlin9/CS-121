@@ -15,16 +15,22 @@ public class PRACTICE
 {
     public static void main(String[] args)
     {
-        final int ROWS = 3;
-        final int COLS = 4;
-        double [ ] [ ] scores = new double [ROWS] [COLS];
-        for (int row = 0; row < ROWS; row++)
-        {
-            for (int col = 0; col < COLS; col++)
-            {
-                System.out.printf("Element in row %d column %d is %f\n", row+1, col+1, scores[row][col]);
-            }
-        }
-        System.out.print("Testing");
+        System.out.println("ackermann (0,0) =  "+ ackermann(0,0));
+        System.out.println("ackermann (0,1) =  "+ ackermann(0,1));
+        System.out.println("ackermann (1,1) =  "+ ackermann(1,1));
+        System.out.println("ackermann (1,2) =  "+ ackermann(1,2));
+        System.out.println("ackermann (1,3) =  "+ ackermann(1,3));
+        System.out.println("ackermann (2,2) =  "+ ackermann(2,2));
+        System.out.println("ackermann (3,2) =  "+ ackermann(3,2));
+    }
+
+    public static int ackermann(int m, int n)
+    {
+        if(m == 0)
+            return n + 1;
+        else if (n == 0 )
+            return ackermann(m-1,1);
+        else
+            return ackermann(m-1,ackermann(m,n-1));
     }
 }
