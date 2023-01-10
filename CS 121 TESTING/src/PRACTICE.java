@@ -14,12 +14,27 @@
 import java.util.ArrayList;
 public class PRACTICE
 {
-    public static void main(String[] args)
+    private Node node;
+    public void add (int value)
     {
-        ArrayList<String> nameList = new ArrayList<String>();
-        nameList.add("Poopy");
-        nameList.add("Shitty");
-        nameList.add("Fucky");
-        System.out.print(nameList.toString());
+        if (node == null)
+        {
+            node = new Node(value);
+        }
+        else
+        {
+            while (node.next==null)
+            {
+                node = node.next;
+            }
+        }
+    }
+    class Node{
+        private int value;
+        private Node next;
+        Node (int value)
+        {
+            this.value=value;
+        }
     }
 }
